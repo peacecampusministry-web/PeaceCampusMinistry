@@ -34,7 +34,18 @@
 .welcome-director-copy p{color:var(--muted);margin:0 0 14px;max-width:510px}
 .welcome-director-copy .signature{font-weight:700;color:var(--ink);margin-top:21px}
 .welcome-director-video{width:100%;aspect-ratio:16/9;display:block;object-fit:cover;border-radius:22px;background:#182b25;box-shadow:0 14px 36px rgba(24,43,37,.16)}
-@media(max-width:760px){.welcome-director{grid-template-columns:1fr}.welcome-director-video{border-radius:17px}}</style>
+@media(max-width:760px){.welcome-director{grid-template-columns:1fr}.welcome-director-video{border-radius:17px}}/* Full luncheon report and photo gallery */
+.luncheon-report-intro{padding-bottom:28px;border-bottom:1px solid var(--line)}
+.luncheon-report-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;padding-top:24px}
+.luncheon-report-item{padding:22px 24px;background:#f7f7f1;border:1px solid #eeece4;border-radius:18px}
+.luncheon-report-item .kicker{display:block;margin-bottom:10px}
+.luncheon-report-item p{margin:0;color:var(--muted)}
+.luncheon-report-item:last-child{grid-column:1/-1}
+.luncheon-photo-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:30px}
+.luncheon-photo-gallery figure{margin:0;overflow:hidden;border-radius:18px;background:#f7f7f1}
+.luncheon-photo-gallery img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.luncheon-photo-gallery figcaption{padding:11px 14px 13px;color:var(--muted);font-size:13px}
+@media(max-width:760px){.luncheon-report-grid,.luncheon-photo-gallery{grid-template-columns:1fr}.luncheon-report-item:last-child{grid-column:auto}}</style>
 </head>
 <body>
 <header class="wrap nav">
@@ -71,21 +82,25 @@
     <p>A meal can open the door to friendship, honest questions, and a deeper sense of belonging.</p>
   </div>
   <div class="luncheon-story-card">
-    <div class="luncheon-intro">
-      <div class="luncheon-intro-copy">
-        <span class="story-meta">University of Houston · Students welcome</span>
-        <h3>Good food. Open conversation. A place to grow.</h3>
-        <p>Our campus luncheon brought students together for a shared meal and time to explore spiritual questions in a supportive setting. The gathering was planned to make space for both personal and spiritual growth.</p>
-        <p>After eating together, students moved into smaller groups for more personal conversations. They discussed faith, life, and purpose, with room to ask questions and share different perspectives. The welcoming atmosphere helped students connect and feel heard.</p>
-        <p>Students responded warmly and expressed gratitude for the opportunity to talk about subjects that are often set aside during a busy university day. We look forward to continuing these meals and conversations.</p>
-        <div class="luncheon-details"><span><strong>When</strong> First Tuesday monthly · 11:30 AM–1 PM</span><span><strong>Where</strong> BSM, Baptist Student Ministry</span></div>
-      </div>
-      <figure class="luncheon-feature-image"><img src="student-lunch-gathering.jpg" alt="University students gathered for a campus ministry luncheon" loading="lazy"><figcaption>Students sharing a meal and conversation</figcaption></figure>
+    <div class="luncheon-intro-copy luncheon-report-intro">
+      <span class="story-meta">University of Houston · Students welcome</span>
+      <h3>Good food. Open conversation. A place to grow.</h3>
+      <p>Our campus luncheon brought students together for a shared meal and time to explore spiritual questions in a supportive setting. The gathering was planned to make space for both personal and spiritual growth.</p>
     </div>
-    <div class="luncheon-moments">
-      <article class="luncheon-moment"><figure><img src="community-lunch.jpg" alt="Students and ministry members sitting together at lunch" loading="lazy"><figcaption>A welcoming table for students</figcaption></figure><div><span class="kicker">A warm welcome</span><h3>Come as you are</h3><p>The luncheon offers a relaxed place to meet others, share food, and take a breath from the pace of campus life. Everyone is welcome, whether it is your first visit or you already know the community.</p></div></article>
-      <article class="luncheon-moment reverse"><figure><img src="community-table.jpg" alt="Students talking together around a table" loading="lazy"><figcaption>Small-group conversation after the meal</figcaption></figure><div><span class="kicker">Meaningful conversation</span><h3>Questions are welcome here</h3><p>After the meal, smaller groups make space for thoughtful conversations about faith, spirituality, and life purpose. Students can listen, share their perspective, or simply bring a question.</p></div></article>
+    <div class="luncheon-report-grid">
+      <article class="luncheon-report-item"><span class="kicker">Event</span><p>The luncheon at the University of Houston was a successful gathering that facilitated spiritual and personal growth among students. Fr. Larry, Johnson, and I organized this event to provide a platform for students to explore their spiritual inquiries in a supportive environment.</p></article>
+      <article class="luncheon-report-item"><span class="kicker">Engagement</span><p>The event began with a communal meal, setting a relaxed tone for the subsequent discussions. We split into smaller groups for more intimate conversations, allowing for a deeper connection with each student. These discussions were pivotal in addressing individual concerns and questions about spirituality and life purpose.</p></article>
+      <article class="luncheon-report-item"><span class="kicker">Preparation</span><p>Efforts were made to ensure the event was welcoming and informative. Coordination for food, space, and the flow of the program was meticulously planned to accommodate the expected turnout of students.</p></article>
+      <article class="luncheon-report-item"><span class="kicker">Feedback and Future Engagement</span><p>The feedback from students was overwhelmingly positive; many expressed gratitude for the opportunity to discuss matters often sidelined in university life. They appreciated the ministry's approach to holistic support. This feedback has encouraged us to plan more such events, aiming for a continuous dialogue that nurtures spiritual and academic growth.</p></article>
+      <article class="luncheon-report-item"><span class="kicker">Spiritual Enquiry</span><p>A significant part of our interaction involved answering questions about Jesus, our existence's purpose, and spirituality's role in daily life. Students were keen to understand how they could integrate spiritual practices with their academic responsibilities, leading to insightful and sometimes profound discussions.</p></article>
     </div>
+    <div class="luncheon-photo-gallery" aria-label="Photos from campus ministry luncheon">
+      <figure><img src="community-lunch.jpg" alt="Students sharing lunch and conversation at the campus ministry gathering" loading="lazy"><figcaption>Students sharing a meal and conversation</figcaption></figure>
+      <figure><img src="community-sermon.jpg" alt="A ministry leader speaking with students during a luncheon gathering" loading="lazy"><figcaption>Gathering and listening together</figcaption></figure>
+      <figure><img src="student-lunch-gathering.jpg" alt="A welcoming campus dining space filled with students" loading="lazy"><figcaption>A welcoming space on campus</figcaption></figure>
+      <figure><img src="bible-study-fellowship.jpg" alt="A student and ministry leader talking over a meal" loading="lazy"><figcaption>Personal conversation over lunch</figcaption></figure>
+    </div>
+    <div class="luncheon-details"><span><strong>When</strong> First Tuesday monthly · 11:30 AM–1 PM</span><span><strong>Where</strong> BSM, Baptist Student Ministry</span></div>
     <div class="luncheon-invite"><p>Join us for the next monthly luncheon. Bring a friend or come on your own.</p><a class="button" href="mailto:peacecampusministry@gmail.com?subject=Campus%20luncheon">Ask about the next luncheon <span>↗</span></a></div>
   </div>
 </section><section id="communion" class="wrap section"><div class="section-head"><div><span class="kicker">Campus Communion</span><h2>One community, growing in Christ.</h2></div><p>We primarily serve international students at the University of Houston, nurturing faith, belonging, service, and understanding across cultures.</p></div><div class="cards"><article class="card"><div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.5"/></svg></div><h3>Rooted in Anglican faith</h3><p>Scripture, Christian tradition, Baptism, and Holy Communion shape our life together.</p></article><article class="card"><div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 21 12l-9 9-9-9z"/><path d="M12 3v18M3 12h18"/></svg></div><h3>One body in Christ</h3><p>Jesus Christ is our cornerstone; students from many cultures gather and grow as one community.</p></article><article class="card"><div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 8h16m-4-4 4 4-4 4M20 16H4m4-4-4 4 4 4"/></svg></div><h3>Built through dialogue</h3><p>We form respectful relationships across campus and faith communities.</p></article></div></section>
